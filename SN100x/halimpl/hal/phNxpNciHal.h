@@ -226,10 +226,7 @@ typedef enum {
   EEPROM_SWP1A_INTF,
   EEPROM_SWP2_INTF,
   EEPROM_FLASH_UPDATE,
-  EEPROM_AUTH_CMD_TIMEOUT,
-  EEPROM_GUARD_TIMER,
-  EEPROM_T4T_NFCEE_ENABLE,
-  EEPROM_AUTONOMOUS_MODE
+  EEPROM_AUTH_CMD_TIMEOUT
 } phNxpNci_EEPROM_request_type_t;
 
 typedef struct phNxpNci_EEPROM_info {
@@ -311,4 +308,5 @@ NFCSTATUS phNxpNciHal_send_nfcee_pwr_cntl_cmd(uint8_t type);
 ** Returns          none
 *******************************************************************************/
 void phNxpNciHal_configFeatureList(uint8_t* init_rsp, uint16_t rsp_len);
+
 #endif /* _PHNXPNCIHAL_H_ */
